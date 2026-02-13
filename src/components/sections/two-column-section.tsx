@@ -9,15 +9,17 @@ interface TwoColumnSectionProps {
 
 export default function TwoColumnSection({ id, title, children, className }: TwoColumnSectionProps) {
   return (
-    <section id={id} className={cn('container mx-auto px-4 md:px-8', className)}>
-      <div className="grid items-start gap-8 md:grid-cols-3 md:gap-16">
-        <div className="md:col-span-1">
-          <h2 className="font-headline text-3xl font-semibold text-primary sticky top-24">
-            {title}
-          </h2>
-        </div>
-        <div className="md:col-span-2">
-          {children}
+    <section id={id} className={cn(className)}>
+      <div className="container mx-auto px-4 md:px-8">
+        <div className="grid items-start gap-8 md:grid-cols-3 md:gap-16">
+          <div className="md:col-span-1">
+            <h2 className="font-headline text-3xl font-semibold text-primary sticky top-24">
+              {title}
+            </h2>
+          </div>
+          <div className="md:col-span-2">
+            {children}
+          </div>
         </div>
       </div>
     </section>

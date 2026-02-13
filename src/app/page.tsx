@@ -26,7 +26,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
 
-        <TwoColumnSection id="portfolio" title="Our Portfolio">
+        <TwoColumnSection id="portfolio" title="Our Portfolio" className="bg-secondary">
           <div className="space-y-6 text-lg text-warm-gray leading-relaxed">
             <p>
               Reshaping how food moves, sells, and sustains.
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </TwoColumnSection>
 
-        <TwoColumnSection id="approach" title="Our Approach">
+        <TwoColumnSection id="approach" title="Our Approach" className="bg-background">
           <div className="space-y-6 text-lg text-warm-gray leading-relaxed">
             <p>
               We identify broken links in the food chain and build technology-driven ventures to fix them. From incubation to scale, we provide capital, expertise, and infrastructure to founders solving real problems.
@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         </TwoColumnSection>
 
-        <TwoColumnSection id="impact" title="Our Impact">
+        <TwoColumnSection id="impact" title="Our Impact" className="bg-secondary">
           <div>
             <div className="grid grid-cols-2 gap-y-8 gap-x-4 md:grid-cols-2 md:gap-12">
               {impactMetrics.map((metric) => (
@@ -87,7 +87,7 @@ export default function Home() {
         </section>
 
 
-        <TwoColumnSection id="updates" title="Updates">
+        <TwoColumnSection id="updates" title="Updates" className="bg-secondary">
           <div className="space-y-6">
             <ul className="space-y-4">
               {updates.map((update) => (
