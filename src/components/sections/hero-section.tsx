@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function HeroSection() {
@@ -30,11 +28,6 @@ export default function HeroSection() {
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/90">
           Scaling the Future of Food
         </p>
-        <Button asChild size="lg" variant="outline" className="mt-8 border-2 border-accent text-white bg-transparent hover:bg-accent hover:text-primary-foreground transition-all duration-300 text-base">
-          <Link href="#portfolio">
-            Explore our ventures
-          </Link>
-        </Button>
       </div>
     </section>
   );
