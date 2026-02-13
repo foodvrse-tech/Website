@@ -39,7 +39,6 @@ export default function Home() {
             <p>
               Each brand operates independently while sharing our network, insights, and commitment to sustainability.
             </p>
-            <LinkWithDot href="#approach">How we build</LinkWithDot>
           </div>
         </TwoColumnSection>
 
