@@ -18,6 +18,11 @@ const navLinks = [
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,40 +55,42 @@ export default function Header() {
           ))}
         </nav>
         <div className="md:hidden">
-          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" aria-label="Open menu">
-                <Menu className="h-6 w-6 text-primary" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-full bg-background">
-              <div className="flex h-full flex-col p-6">
-                <div className="flex items-center justify-between">
-                  <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
-                    <Logo />
-                  </Link>
-                  <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)} aria-label="Close menu">
-                    <X className="h-6 w-6 text-primary" />
-                  </Button>
+          {hasMounted && (
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" aria-label="Open menu">
+                  <Menu className="h-6 w-6 text-primary" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-full bg-background">
+                <div className="flex h-full flex-col p-6">
+                  <div className="flex items-center justify-between">
+                    <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Logo />
+                    </Link>
+                    <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)} aria-label="Close menu">
+                      <X className="h-6 w-6 text-primary" />
+                    </Button>
+                  </div>
+                  <nav className="mt-12 flex-1">
+                    <ul className="flex flex-col items-center space-y-8">
+                      {navLinks.map((link) => (
+                        <li key={link.href}>
+                          <Link
+                            href={link.href}
+                            className="text-2xl font-medium text-primary hover:text-accent transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            {link.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </nav>
                 </div>
-                <nav className="mt-12 flex-1">
-                  <ul className="flex flex-col items-center space-y-8">
-                    {navLinks.map((link) => (
-                      <li key={link.href}>
-                        <Link
-                          href={link.href}
-                          className="text-2xl font-medium text-primary hover:text-accent transition-colors"
-                          onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                          {link.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </nav>
-              </div>
-            </SheetContent>
-          </Sheet>
+              </SheetContent>
+            </Sheet>
+          )}
         </div>
       </div>
     </header>
