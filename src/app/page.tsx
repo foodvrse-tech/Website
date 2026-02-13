@@ -32,7 +32,7 @@ export default function Home() {
               Reshaping how food moves, sells, and sustains.
             </p>
             <p>
-              We build high-impact ventures that solve systemic problems at scale—anchored by Dishii in the retail sector, and expanding vertically into precision agriculture, smart distribution, and sustainable agri-processing.
+              We build high-impact ventures that solve systemic problems at scale, anchored by Dishii in the retail sector, and expanding vertically into precision agriculture, smart distribution, and sustainable agri-processing.
             </p>
             <LinkWithDot href="#portfolio">Explore our ventures</LinkWithDot>
           </div>
