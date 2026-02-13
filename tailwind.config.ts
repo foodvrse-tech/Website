@@ -8,13 +8,23 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1200px",
+      },
+    },
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        headline: ['Literata', 'serif'],
         code: ['monospace'],
       },
       colors: {
+        'warm-gray': '#4A4A4A',
+        'forest-green': '#2B4F3C',
+        'dishii-orange': '#FF8C00',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
