@@ -6,13 +6,6 @@ import LinkWithDot from '@/components/shared/link-with-dot';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
-const impactMetrics = [
-  { value: '2', label: 'Ventures launched' },
-  { value: '15,000+', label: 'Meals saved via Dishii' },
-  { value: '85+', label: 'Partner restaurants' },
-  { value: '4 tons', label: 'CO₂ mitigated' },
-];
-
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -39,22 +32,6 @@ export default function Home() {
             <p>
               Each brand operates independently while sharing our network, insights, and commitment to sustainability.
             </p>
-          </div>
-        </TwoColumnSection>
-
-        <TwoColumnSection id="impact" title="Our Impact" className="bg-secondary">
-          <div>
-            <div className="grid grid-cols-2 gap-y-8 gap-x-4 md:grid-cols-2 md:gap-12">
-              {impactMetrics.map((metric) => (
-                <div key={metric.label}>
-                  <p className="font-headline text-5xl font-bold text-forest-green lg:text-6xl">
-                    {metric.value}
-                  </p>
-                  <p className="mt-2 text-warm-gray">{metric.label}</p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-8 text-sm text-warm-gray/80">Updated quarterly</p>
           </div>
         </TwoColumnSection>
 

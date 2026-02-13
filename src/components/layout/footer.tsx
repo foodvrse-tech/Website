@@ -5,7 +5,6 @@ import Logo from './logo';
 const quickLinks = [
   { href: '#portfolio', label: 'Portfolio' },
   { href: '#approach', label: 'Approach' },
-  { href: '#impact', label: 'Impact' },
 ];
 
 const socialLinks = [
