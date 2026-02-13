@@ -28,7 +28,7 @@ export default function HeroSection() {
           Building the Future of Food
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/90">
-          A parent company launching high-impact ventures across Africa&apos;s food system.
+          Scaling the Future of Food
         </p>
         <Button asChild size="lg" variant="outline" className="mt-8 border-2 border-accent text-white bg-transparent hover:bg-accent hover:text-primary-foreground transition-all duration-300 text-base">
           <Link href="#portfolio">
