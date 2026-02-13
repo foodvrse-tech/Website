@@ -2,11 +2,14 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import HeroSection from '@/components/sections/hero-section';
 import TwoColumnSection from '@/components/sections/two-column-section';
-import LinkWithDot from '@/components/shared/link-with-dot';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
+  const approachImage = PlaceHolderImages.find(img => img.id === 'approach-background');
+
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
@@ -24,16 +27,39 @@ export default function Home() {
           </div>
         </TwoColumnSection>
 
-        <TwoColumnSection id="approach" title="Our Approach" className="bg-background">
-          <div className="space-y-6 text-lg text-warm-gray leading-relaxed">
-            <p>
-              We identify broken links in the food chain and build technology-driven ventures to fix them. From incubation to scale, we provide capital, expertise, and infrastructure to founders solving real problems.
-            </p>
-            <p>
-              Each brand operates independently while sharing our network, insights, and commitment to sustainability.
-            </p>
+        <section id="approach" className="relative py-0">
+          {approachImage && (
+            <div className="absolute inset-0 z-0">
+              <Image
+                src={approachImage.imageUrl}
+                alt={approachImage.description}
+                data-ai-hint={approachImage.imageHint}
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+            </div>
+          )}
+          <div className="container relative z-10 mx-auto px-4 py-16 md:px-8 md:py-24">
+            <div className="grid items-start gap-8 md:grid-cols-3 md:gap-16">
+              <div className="md:col-span-1">
+                <h2 className="font-headline sticky top-24 text-3xl font-semibold text-primary">
+                  Our Approach
+                </h2>
+              </div>
+              <div className="md:col-span-2">
+                <div className="space-y-6 text-lg leading-relaxed text-warm-gray">
+                  <p>
+                    We identify broken links in the food chain and build technology-driven ventures to fix them. From incubation to scale, we provide capital, expertise, and infrastructure to founders solving real problems.
+                  </p>
+                  <p>
+                    Each brand operates independently while sharing our network, insights, and commitment to sustainability.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </TwoColumnSection>
+        </section>
 
         <section className="bg-background">
           <div className="container mx-auto px-4 md:px-8">
