@@ -13,12 +13,6 @@ const impactMetrics = [
   { value: '4 tons', label: 'CO₂ mitigated' },
 ];
 
-const updates = [
-  { date: 'Jan 2026', title: 'Dishii launches on Play Store' },
-  { date: 'Dec 2025', title: 'FoodVrse named finalist in The Future of Food Award' },
-  { date: 'Nov 2025', title: 'New venture in development: Precision Agriculture' },
-];
-
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -85,21 +79,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
-        <TwoColumnSection id="updates" title="Updates" className="bg-secondary">
-          <div className="space-y-6">
-            <ul className="space-y-4">
-              {updates.map((update) => (
-                <li key={update.title} className="flex flex-col sm:flex-row justify-between sm:items-center">
-                  <span className="text-lg text-warm-gray">{update.title}</span>
-                  <span className="text-base text-warm-gray/60">{update.date}</span>
-                </li>
-              ))}
-            </ul>
-            <LinkWithDot href="#updates">View all news</LinkWithDot>
-          </div>
-        </TwoColumnSection>
       </main>
       <Footer />
     </div>
