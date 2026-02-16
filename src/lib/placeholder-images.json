@@ -17,6 +17,30 @@
       "description": "Dishii company logo",
       "imageUrl": "https://i.postimg.cc/Y0GqccJm/dishii.png",
       "imageHint": "company logo"
+    },
+    {
+      "id": "techstars-logo",
+      "description": "Techstars logo",
+      "imageUrl": "https://images.unsplash.com/photo-1562705121-e624542c7b9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29tcGFueSUyMGxvZ298ZW58MHx8fHwxNzcxMTE2MzY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "undp-logo",
+      "description": "UNDP logo",
+      "imageUrl": "https://images.unsplash.com/photo-1768725845045-ad6aff3503fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvcmdhbml6YXRpb24lMjBsb2dvfGVufDB8fHx8MTc3MTE0ODQ0OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "organization logo"
+    },
+    {
+      "id": "pittopalace-logo",
+      "description": "Pittopalace logo",
+      "imageUrl": "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NzExMTYzNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "500-global-logo",
+      "description": "500 Global logo",
+      "imageUrl": "https://images.unsplash.com/photo-1529612700005-e35377bf1415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21wYW55JTIwbG9nb3xlbnwwfHx8fDE3NzExMTYzNjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "company logo"
     }
   ]
 }

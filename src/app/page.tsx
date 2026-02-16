@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import DishiiLogo from '@/components/layout/dishii-logo';
+import TrustedBySection from '@/components/sections/trusted-by-section';
 
 export default function Home() {
   const approachImage = PlaceHolderImages.find(img => img.id === 'approach-background');
@@ -76,6 +77,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <TrustedBySection />
       </main>
       <Footer />
     </div>
