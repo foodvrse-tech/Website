@@ -61,7 +61,7 @@ export default function AboutUs() {
                 Reshaping How Food Moves, Sells, and Sustains
               </p>
               <p className="mt-6 text-lg text-foreground/80">
-                FoodVrse is the parent company behind high-impact brands that tackle systemic inefficiencies across the food value chain. We don’t just address food waste — we rethink how food is produced, distributed, sold, and consumed.
+                FoodVrse is the parent company behind high-impact brands that tackle systemic inefficiencies across the food value chain. We don’t just address food waste we rethink how food is produced, distributed, sold, and consumed.
               </p>
               <p className="mt-4 text-lg text-foreground/80">
                 We build and grow our own ventures to create social, environmental, and economic impact. <strong>Dishii</strong>, our first brand in the retail sector, anchors this vision, with plans to expand into precision agriculture, smart distribution, and sustainable agri-processing.
