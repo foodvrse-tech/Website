@@ -59,9 +59,6 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 py-6 text-center text-sm text-warm-gray/60">
-          <p>Built by an expert senior engineer.</p>
-        </div>
       </div>
     </footer>
   );
