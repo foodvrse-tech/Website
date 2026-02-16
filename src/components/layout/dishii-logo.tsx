@@ -15,11 +15,6 @@ export default function DishiiLogo() {
           }
         `}
       </style>
-      {/* "Dishi" in blue */}
-      <text y="65" className="dishii-font" fill="#0A2351">
-        Dishi
-      </text>
-
       {/* second 'i' as an icon, in orange */}
       <g transform="translate(245, 0)">
         <rect y="27" width="24" height="38" fill="#F37F15" />
