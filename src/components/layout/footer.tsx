@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 import Logo from './logo';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const quickLinks = [
   { href: '/about', label: 'About Us' },
@@ -14,18 +16,20 @@ const socialLinks = [
 ];
 
 export default function Footer() {
+  const goodMarketLogo = PlaceHolderImages.find(img => img.id === 'goodmarket-logo');
+
   return (
     <footer id="contact" className="bg-background py-12">
       <div className="container mx-auto px-4 md:px-8">
         <Separator className="mb-12 bg-accent" />
-        <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-4 md:text-left">
-          <div className="flex justify-center md:justify-start">
+        <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-12 md:text-left">
+          <div className="flex justify-center md:col-span-3 md:justify-start">
             <div className="space-y-4">
               <Logo />
               <p className="text-sm text-warm-gray">&copy; 2026 FoodVrse</p>
             </div>
           </div>
-          <div>
+          <div className="md:col-span-2">
             <h3 className="font-semibold text-primary">Quick Links</h3>
             <ul className="mt-4 space-y-2">
               {quickLinks.map((link) => (
@@ -37,7 +41,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div>
+          <div className="md:col-span-2">
             <h3 className="font-semibold text-primary">Contact Us</h3>
             <ul className="mt-4 space-y-2">
               <li>
@@ -47,7 +51,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="md:col-span-2">
             <h3 className="font-semibold text-primary">Social</h3>
             <ul className="mt-4 space-y-2">
               {socialLinks.map((link) => (
@@ -58,6 +62,21 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="flex flex-col items-center md:col-span-3 md:items-start">
+            <h3 className="font-semibold text-primary">Approved by</h3>
+            {goodMarketLogo && (
+              <a href="https://goodmarket.global/c/foodvrse" target="_blank" rel="noopener noreferrer" className="mt-4">
+                <Image
+                  src={goodMarketLogo.imageUrl}
+                  alt={goodMarketLogo.description}
+                  data-ai-hint={goodMarketLogo.imageHint}
+                  width={100}
+                  height={100}
+                  className="h-auto"
+                />
+              </a>
+            )}
           </div>
         </div>
       </div>
