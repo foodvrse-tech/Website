@@ -1,6 +1,8 @@
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const values = [
   {
@@ -49,18 +51,40 @@ const journeySteps = [
 ];
 
 export default function AboutUs() {
+  const aboutHeroImage = PlaceHolderImages.find(img => img.id === 'about-hero-background');
+  
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
-      <main className="flex-1 pt-24 pb-12">
+      <main className="flex-1">
+        <section className="relative flex h-[60vh] min-h-[450px] items-center justify-center p-0">
+          {aboutHeroImage && (
+            <div className="absolute inset-0 z-0">
+              <Image
+                src={aboutHeroImage.imageUrl}
+                alt={aboutHeroImage.description}
+                data-ai-hint={aboutHeroImage.imageHint}
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-primary/60" />
+            </div>
+          )}
+          <div className="relative z-10 text-center text-white px-4">
+            <h1 className="font-headline text-5xl font-extrabold md:text-7xl">
+              About FoodVrse
+            </h1>
+             <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-white/90">
+                Reshaping How Food Moves, Sells, and Sustains
+            </p>
+          </div>
+        </section>
+
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4 md:px-8">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl font-headline font-bold text-primary">🌍 FoodVrse</h1>
-              <p className="mt-4 text-2xl font-semibold text-muted-foreground">
-                Reshaping How Food Moves, Sells, and Sustains
-              </p>
-              <p className="mt-6 text-lg text-foreground/80">
+              <p className="text-lg text-foreground/80">
                 FoodVrse is the parent company behind high-impact brands that tackle systemic inefficiencies across the food value chain. We don’t just address food waste we rethink how food is produced, distributed, sold, and consumed.
               </p>
               <p className="mt-4 text-lg text-foreground/80">

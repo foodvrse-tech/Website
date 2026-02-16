@@ -41,6 +41,12 @@
       "description": "500 Global logo",
       "imageUrl": "https://i.postimg.cc/tZL8H5j8/500_startups_logo.jpg",
       "imageHint": "company logo"
+    },
+    {
+      "id": "about-hero-background",
+      "description": "Diverse group of people working together in a sunlit modern office",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NzExNTIxNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team collaboration"
     }
   ]
 }
