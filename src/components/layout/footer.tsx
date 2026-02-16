@@ -3,8 +3,9 @@ import { Separator } from '@/components/ui/separator';
 import Logo from './logo';
 
 const quickLinks = [
-  { href: '#portfolio', label: 'Portfolio' },
-  { href: '#approach', label: 'Approach' },
+  { href: '/about', label: 'About Us' },
+  { href: '/#portfolio', label: 'Portfolio' },
+  { href: '/#approach', label: 'Approach' },
 ];
 
 const socialLinks = [

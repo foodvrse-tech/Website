@@ -9,8 +9,9 @@ import Logo from './logo';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '#portfolio', label: 'Portfolio' },
-  { href: '#approach', label: 'Approach' },
+  { href: '/about', label: 'About Us' },
+  { href: '/#portfolio', label: 'Portfolio' },
+  { href: '/#approach', label: 'Approach' },
   { href: 'https://www.instagram.com/foodvrse/', label: 'Contact Us' },
 ];
 
