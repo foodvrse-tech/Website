@@ -35,7 +35,7 @@ export default function TrustedBySection() {
     <section id="partners" className="bg-background overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
         <AnimatedContent>
-          <div className="text-center mb-12">
+          <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary">
               Trusted by Industry Leaders
             </h2>

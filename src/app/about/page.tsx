@@ -85,7 +85,7 @@ export default function AboutUs() {
         <section>
           <div className="container mx-auto px-4 md:px-8">
             <AnimatedContent>
-              <div className="max-w-4xl mx-auto text-center">
+              <div className="max-w-5xl mx-auto">
                 <p className="text-base md:text-lg text-foreground/80">
                   FoodVrse is the parent company behind high-impact brands that tackle systemic inefficiencies across the food value chain. We don’t just address food waste we rethink how food is produced, distributed, sold, and consumed.
                 </p>
@@ -100,7 +100,7 @@ export default function AboutUs() {
         <section className="bg-secondary">
             <div className="container mx-auto px-4 md:px-8">
                 <AnimatedContent>
-                    <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+                    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
                         <div className="space-y-4">
                             <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary">Our Vision</h2>
                             <p className="text-base md:text-lg text-muted-foreground">A resilient, efficient, and sustainable food ecosystem where:</p>
@@ -156,7 +156,7 @@ export default function AboutUs() {
         
         <section className="bg-secondary">
              <div className="container mx-auto px-4 md:px-8">
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-5xl mx-auto">
                     <AnimatedContent>
                         <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary text-center mb-12">Our Journey</h2>
                     </AnimatedContent>
