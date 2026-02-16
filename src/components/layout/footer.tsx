@@ -64,7 +64,6 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex flex-col items-center md:col-span-3 md:items-start">
-            <h3 className="font-semibold text-primary">Approved by</h3>
             {goodMarketLogo && (
               <a href="https://goodmarket.global/c/foodvrse" target="_blank" rel="noopener noreferrer" className="mt-4">
                 <Image
