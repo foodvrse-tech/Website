@@ -22,7 +22,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-primary/60" />
       </div>
       <div className="relative z-10 text-center text-white px-4">
-        <h1 className="font-headline text-5xl font-semibold md:text-7xl lg:text-8xl">
+        <h1 className="font-headline text-5xl font-extrabold md:text-7xl lg:text-8xl">
           Building the Future of Food
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/90">
