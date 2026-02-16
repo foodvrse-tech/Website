@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   title: 'FoodVrse Ventures',
   description: 'Building the Future of Food across Africa.',
   icons: {
-    icon: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png',
-    shortcut: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png',
-    apple: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png',
+    icon: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png?v=1',
+    shortcut: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png?v=1',
+    apple: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png?v=1',
   },
 };
 
