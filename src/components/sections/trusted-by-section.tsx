@@ -39,7 +39,7 @@ export default function TrustedBySection() {
             <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary">
               Trusted by Industry Leaders
             </h2>
-            <p className="mt-2 text-lg text-muted-foreground">
+            <p className="mt-2 text-base md:text-lg text-muted-foreground">
               Recognition & Partnerships
             </p>
           </div>

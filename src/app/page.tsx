@@ -21,7 +21,7 @@ export default function Home() {
 
         <TwoColumnSection id="portfolio" title="Our Portfolio" className="bg-secondary">
           <div className="space-y-10">
-            <div className="space-y-6 text-lg text-warm-gray leading-relaxed">
+            <div className="space-y-6 text-base md:text-lg text-warm-gray leading-relaxed">
               <p>
                 Reshaping how food moves, sells, and sustains.
               </p>
@@ -32,10 +32,10 @@ export default function Home() {
             
             <div className="space-y-4 pt-6">
               <DishiiLogo />
-              <p className="text-lg leading-relaxed text-warm-gray">
+              <p className="text-base md:text-lg leading-relaxed text-warm-gray">
                 A consumer marketplace connecting people to surplus meals from restaurants and supermarkets at discounted prices. Good for wallets. Good for the planet.
               </p>
-              <Button asChild variant="link" className="mt-2 p-0 text-lg text-primary hover:text-accent">
+              <Button asChild variant="link" className="mt-2 p-0 text-base md:text-lg text-primary hover:text-accent">
                 <Link href="http://www.dishii.co/" target="_blank" rel="noopener noreferrer">
                   Visit Dishii →
                 </Link>
@@ -67,7 +67,7 @@ export default function Home() {
                   </h2>
                 </div>
                 <div className="md:col-span-2">
-                  <div className="space-y-6 text-lg leading-relaxed text-white/90">
+                  <div className="space-y-6 text-base md:text-lg leading-relaxed text-white/90">
                     <p>
                       At FoodVrse, we identify broken links in the food system and build technology-driven ventures to fix them. From concept to pilot to scale, we create and grow our own brands, tackling real, systemic challenges in food production, distribution, and retail.
                     </p>

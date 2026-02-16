@@ -76,7 +76,7 @@ export default function AboutUs() {
             <h1 className="font-headline text-5xl font-extrabold md:text-7xl">
               About FoodVrse
             </h1>
-             <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-white/90">
+             <p className="mt-4 max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-white/90">
                 Reshaping How Food Moves, Sells, and Sustains
             </p>
           </AnimatedContent>
@@ -86,10 +86,10 @@ export default function AboutUs() {
           <div className="container mx-auto px-4 md:px-8">
             <AnimatedContent>
               <div className="max-w-4xl mx-auto text-center">
-                <p className="text-lg text-foreground/80">
+                <p className="text-base md:text-lg text-foreground/80">
                   FoodVrse is the parent company behind high-impact brands that tackle systemic inefficiencies across the food value chain. We don’t just address food waste we rethink how food is produced, distributed, sold, and consumed.
                 </p>
-                <p className="mt-4 text-lg text-foreground/80">
+                <p className="mt-4 text-base md:text-lg text-foreground/80">
                   We build and grow our own ventures to create social, environmental, and economic impact. <strong>Dishii</strong>, our first brand in the retail sector, anchors this vision, with plans to expand into precision agriculture, smart distribution, and sustainable agri-processing.
                 </p>
               </div>
@@ -103,7 +103,7 @@ export default function AboutUs() {
                     <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-start">
                         <div className="space-y-4">
                             <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary">Our Vision</h2>
-                            <p className="text-lg text-muted-foreground">A resilient, efficient, and sustainable food ecosystem where:</p>
+                            <p className="text-base md:text-lg text-muted-foreground">A resilient, efficient, and sustainable food ecosystem where:</p>
                             <ul className="space-y-3 pt-2">
                                 <li className="flex items-start">
                                     <CheckCircle2 className="h-6 w-6 text-accent mr-3 mt-1 shrink-0" />
@@ -125,7 +125,7 @@ export default function AboutUs() {
                         </div>
                         <div className="space-y-4">
                             <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary">Our Mission</h2>
-                            <p className="text-lg text-foreground/80">
+                            <p className="text-base md:text-lg text-foreground/80">
                             To design and scale high-impact brands that solve systemic food challenges, optimizing the flow of food from source to table while creating social and environmental impact.
                             </p>
                         </div>
@@ -182,7 +182,7 @@ export default function AboutUs() {
                         </ul>
                     </div>
                      <AnimatedContent delay={100 + journeySteps.length * 150}>
-                        <p className="text-center mt-12 text-lg">One brand at a time, we are <strong>reshaping how food moves, sells, and sustains</strong>.</p>
+                        <p className="text-center mt-12 text-base md:text-lg">One brand at a time, we are <strong>reshaping how food moves, sells, and sustains</strong>.</p>
                      </AnimatedContent>
                 </div>
              </div>
