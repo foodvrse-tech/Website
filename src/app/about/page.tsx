@@ -82,7 +82,7 @@ export default function AboutUs() {
           </AnimatedContent>
         </section>
 
-        <section className="py-12 md:py-16">
+        <section>
           <div className="container mx-auto px-4 md:px-8">
             <AnimatedContent>
               <div className="max-w-4xl mx-auto text-center">
@@ -97,12 +97,12 @@ export default function AboutUs() {
           </div>
         </section>
 
-        <section className="py-12 md:py-16 bg-secondary">
+        <section className="bg-secondary">
             <div className="container mx-auto px-4 md:px-8">
                 <AnimatedContent>
                     <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-start">
                         <div className="space-y-4">
-                            <h2 className="text-3xl font-headline font-semibold text-primary">Our Vision</h2>
+                            <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary">Our Vision</h2>
                             <p className="text-lg text-muted-foreground">A resilient, efficient, and sustainable food ecosystem where:</p>
                             <ul className="space-y-3 pt-2">
                                 <li className="flex items-start">
@@ -124,7 +124,7 @@ export default function AboutUs() {
                             </ul>
                         </div>
                         <div className="space-y-4">
-                            <h2 className="text-3xl font-headline font-semibold text-primary">Our Mission</h2>
+                            <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary">Our Mission</h2>
                             <p className="text-lg text-foreground/80">
                             To design and scale high-impact brands that solve systemic food challenges, optimizing the flow of food from source to table while creating social and environmental impact.
                             </p>
@@ -134,11 +134,11 @@ export default function AboutUs() {
             </div>
         </section>
 
-        <section className="py-12 md:py-16">
+        <section>
             <div className="container mx-auto px-4 md:px-8">
                  <div className="max-w-6xl mx-auto">
                     <AnimatedContent>
-                        <h2 className="text-3xl font-headline font-semibold text-primary text-center mb-12">Our Values</h2>
+                        <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary text-center mb-12">Our Values</h2>
                     </AnimatedContent>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
                         {values.map((value, index) => (
@@ -154,11 +154,11 @@ export default function AboutUs() {
             </div>
         </section>
         
-        <section className="py-12 md:py-16 bg-secondary">
+        <section className="bg-secondary">
              <div className="container mx-auto px-4 md:px-8">
                 <div className="max-w-4xl mx-auto">
                     <AnimatedContent>
-                        <h2 className="text-3xl font-headline font-semibold text-primary text-center mb-12">Our Journey</h2>
+                        <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary text-center mb-12">Our Journey</h2>
                     </AnimatedContent>
                     <div className="relative">
                         <div className="absolute left-3.5 top-0 h-full w-px bg-border" aria-hidden="true" />

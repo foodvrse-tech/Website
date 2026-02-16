@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </TwoColumnSection>
 
-        <section id="approach" className="relative py-16 md:py-24 overflow-hidden">
+        <section id="approach" className="relative overflow-hidden">
           {approachImage && (
             <div className="absolute inset-0 z-0">
               <Image
@@ -62,7 +62,7 @@ export default function Home() {
             <AnimatedContent>
               <div className="grid items-start gap-8 md:grid-cols-3 md:gap-16">
                 <div className="md:col-span-1">
-                  <h2 className="font-headline sticky top-24 text-3xl font-semibold text-white">
+                  <h2 className="font-headline sticky top-24 text-2xl sm:text-3xl font-semibold text-white">
                     Our Approach
                   </h2>
                 </div>

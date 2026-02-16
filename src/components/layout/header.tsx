@@ -83,7 +83,7 @@ export default function Header() {
                         <li key={link.href}>
                           <Link
                             href={link.href}
-                            className="text-2xl font-medium text-primary hover:text-accent transition-colors"
+                            className="text-xl font-medium text-primary hover:text-accent transition-colors"
                             onClick={() => setIsMobileMenuOpen(false)}
                              target={link.href.startsWith('http') ? '_blank' : undefined}
                             rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}

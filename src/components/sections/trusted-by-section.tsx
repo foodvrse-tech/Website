@@ -32,11 +32,11 @@ const partners = [
 
 export default function TrustedBySection() {
   return (
-    <section id="partners" className="py-16 md:py-24 bg-background overflow-hidden">
+    <section id="partners" className="bg-background overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
         <AnimatedContent>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-headline font-semibold text-primary">
+            <h2 className="text-2xl sm:text-3xl font-headline font-semibold text-primary">
               Trusted by Industry Leaders
             </h2>
             <p className="mt-2 text-lg text-muted-foreground">
