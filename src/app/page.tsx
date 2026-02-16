@@ -66,10 +66,10 @@ export default function Home() {
               <div className="md:col-span-2">
                 <div className="space-y-6 text-lg leading-relaxed text-white/90">
                   <p>
-                    We identify broken links in the food chain and build technology-driven ventures to fix them. From incubation to scale, we provide capital, expertise, and infrastructure to founders solving real problems.
+                    At FoodVrse, we identify broken links in the food system and build technology-driven ventures to fix them. From concept to pilot to scale, we create and grow our own brands, tackling real, systemic challenges in food production, distribution, and retail.
                   </p>
                   <p>
-                    Each brand operates independently while sharing our network, insights, and commitment to sustainability.
+                    Each brand, including Dishii, operates independently while sharing FoodVrse’s network, insights, and commitment to sustainability, community, and innovation.
                   </p>
                 </div>
               </div>
