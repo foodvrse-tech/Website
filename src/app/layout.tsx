@@ -5,6 +5,9 @@ import { Toaster } from "@/components/ui/toaster"
 export const metadata: Metadata = {
   title: 'FoodVrse Ventures',
   description: 'Building the Future of Food across Africa.',
+  icons: {
+    icon: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png',
+  },
 };
 
 export default function RootLayout({
