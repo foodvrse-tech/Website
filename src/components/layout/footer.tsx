@@ -10,7 +10,7 @@ const quickLinks = [
 const socialLinks = [
   { href: 'https://www.linkedin.com/company/foodvrse/', label: 'LinkedIn' },
   { href: '#', label: 'Twitter' },
-  { href: '#', label: 'Instagram' },
+  { href: 'https://www.instagram.com/foodvrse/', label: 'Instagram' },
 ];
 
 export default function Footer() {
