@@ -41,14 +41,17 @@ export default function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
         <Link href="/" aria-label="FoodVrse Home">
-          <Logo />
+          <Logo className={cn(!isScrolled && 'text-primary-foreground')} />
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-primary hover:text-accent transition-colors"
+              className={cn(
+                "text-sm font-medium text-primary hover:text-accent transition-colors",
+                !isScrolled && "text-primary-foreground"
+              )}
               target={link.href.startsWith('http') ? '_blank' : undefined}
               rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
             >
@@ -61,7 +64,7 @@ export default function Header() {
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" aria-label="Open menu">
-                  <Menu className="h-6 w-6 text-primary" />
+                  <Menu className={cn("h-6 w-6 text-primary", !isScrolled && "text-primary-foreground")} />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-full bg-background">
