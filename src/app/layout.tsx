@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: 'Building the Future of Food across Africa.',
   icons: {
     icon: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png',
+    shortcut: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png',
+    apple: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png',
   },
 };
 
