@@ -8,7 +8,7 @@ const quickLinks = [
 ];
 
 const socialLinks = [
-  { href: '#', label: 'LinkedIn' },
+  { href: 'https://www.linkedin.com/company/foodvrse/', label: 'LinkedIn' },
   { href: '#', label: 'Twitter' },
   { href: '#', label: 'Instagram' },
 ];
@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2">
               {socialLinks.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-warm-gray hover:text-accent transition-colors">
+                  <Link href={link.href} className="text-warm-gray hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
                     {link.label}
                   </Link>
                 </li>
