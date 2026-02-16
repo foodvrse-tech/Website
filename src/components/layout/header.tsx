@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { href: '#portfolio', label: 'Portfolio' },
   { href: '#approach', label: 'Approach' },
-  { href: '#contact', label: 'Contact' },
+  { href: 'https://www.instagram.com/foodvrse/', label: 'Contact Us' },
 ];
 
 export default function Header() {
@@ -48,6 +48,8 @@ export default function Header() {
               key={link.href}
               href={link.href}
               className="text-sm font-medium text-primary hover:text-accent transition-colors"
+              target={link.href.startsWith('http') ? '_blank' : undefined}
+              rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
             >
               {link.label}
             </Link>
@@ -79,6 +81,8 @@ export default function Header() {
                             href={link.href}
                             className="text-2xl font-medium text-primary hover:text-accent transition-colors"
                             onClick={() => setIsMobileMenuOpen(false)}
+                             target={link.href.startsWith('http') ? '_blank' : undefined}
+                            rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                           >
                             {link.label}
                           </Link>

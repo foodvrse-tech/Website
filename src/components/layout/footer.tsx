@@ -14,7 +14,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-background" id="contact">
+    <footer className="bg-background py-12">
       <div className="container mx-auto px-4 md:px-8">
         <Separator className="mb-12 bg-accent" />
         <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-4 md:text-left">
@@ -37,7 +37,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold text-primary">Contact</h3>
+            <h3 className="font-semibold text-primary">Contact Us</h3>
             <ul className="mt-4 space-y-2">
               <li>
                 <a href="mailto:hello@foodvrse.com" className="text-warm-gray hover:text-accent transition-colors">
