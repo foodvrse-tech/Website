@@ -9,6 +9,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
   const approachImage = PlaceHolderImages.find(img => img.id === 'approach-background');
+  const dishiiLogo = PlaceHolderImages.find(img => img.id === 'dishii-logo');
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -66,7 +67,16 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-8">
             <div className="grid items-center gap-8 md:grid-cols-3 md:gap-16">
               <div className="md:col-span-1">
-                <h2 className="font-headline text-5xl font-bold text-dishii-orange md:text-6xl">Dishii</h2>
+                {dishiiLogo && (
+                  <Image
+                    src={dishiiLogo.imageUrl}
+                    alt={dishiiLogo.description}
+                    data-ai-hint={dishiiLogo.imageHint}
+                    width={400}
+                    height={100}
+                    className="h-auto w-full"
+                  />
+                )}
               </div>
               <div className="md:col-span-2">
                 <p className="text-lg leading-relaxed text-warm-gray">

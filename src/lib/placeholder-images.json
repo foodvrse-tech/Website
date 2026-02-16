@@ -11,6 +11,12 @@
       "description": "Lush green farmland seen from above",
       "imageUrl": "https://images.unsplash.com/photo-1464979625110-23a364581395?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYXJtbGFuZHxlbnwwfHx8fDE3MTU3OTk4MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "farmland aerial"
+    },
+    {
+      "id": "dishii-logo",
+      "description": "Dishii company logo",
+      "imageUrl": "https://images.unsplash.com/photo-1602934445884-da0fa1c9d3b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsb2dvfGVufDB8fHx8MTc3MTE5OTY3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo"
     }
   ]
 }
