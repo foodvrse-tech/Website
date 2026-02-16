@@ -15,18 +15,16 @@ export default function DishiiLogo() {
           }
         `}
       </style>
-      {/* "Dish" in blue */}
-      <text y="65" className="dishii-font">
-        <tspan fill="#0A2351">Dish</tspan>
-        {/* first orange "i" */}
-        <tspan dx="5" fill="#F37F15">i</tspan>
+      {/* "Dishi" in blue */}
+      <text y="65" className="dishii-font" fill="#0A2351">
+        Dishi
       </text>
 
-      {/* second orange "i" (icon) */}
-      <g transform="translate(250, 0)">
-        <rect y="27" width="16" height="38" fill="#F37F15" />
-        <circle cx="8" cy="12" r="8" fill="#F37F15" />
-        <circle cx="32" cy="12" r="8" fill="#F37F15" />
+      {/* second 'i' as an icon, in orange */}
+      <g transform="translate(245, 0)">
+        <rect y="27" width="24" height="38" fill="#F37F15" />
+        <circle cx="6" cy="12" r="8" fill="#F37F15" />
+        <circle cx="22" cy="12" r="8" fill="#F37F15" />
       </g>
     </svg>
   );
