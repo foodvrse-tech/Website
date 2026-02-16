@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import DishiiLogo from '@/components/layout/dishii-logo';
 import TrustedBySection from '@/components/sections/trusted-by-section';
+import AnimatedContent from '@/components/shared/animated-content';
 
 export default function Home() {
   const approachImage = PlaceHolderImages.find(img => img.id === 'approach-background');
@@ -15,7 +16,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 overflow-x-hidden">
         <HeroSection />
 
         <TwoColumnSection id="portfolio" title="Our Portfolio" className="bg-secondary">
@@ -43,7 +44,7 @@ export default function Home() {
           </div>
         </TwoColumnSection>
 
-        <section id="approach" className="relative py-16 md:py-24">
+        <section id="approach" className="relative py-16 md:py-24 overflow-hidden">
           {approachImage && (
             <div className="absolute inset-0 z-0">
               <Image
@@ -58,23 +59,25 @@ export default function Home() {
             </div>
           )}
           <div className="container relative z-10 mx-auto px-4 md:px-8">
-            <div className="grid items-start gap-8 md:grid-cols-3 md:gap-16">
-              <div className="md:col-span-1">
-                <h2 className="font-headline sticky top-24 text-3xl font-semibold text-white">
-                  Our Approach
-                </h2>
-              </div>
-              <div className="md:col-span-2">
-                <div className="space-y-6 text-lg leading-relaxed text-white/90">
-                  <p>
-                    At FoodVrse, we identify broken links in the food system and build technology-driven ventures to fix them. From concept to pilot to scale, we create and grow our own brands, tackling real, systemic challenges in food production, distribution, and retail.
-                  </p>
-                  <p>
-                    Each brand, including Dishii, operates independently while sharing FoodVrse’s network, insights, and commitment to sustainability, community, and innovation.
-                  </p>
+            <AnimatedContent>
+              <div className="grid items-start gap-8 md:grid-cols-3 md:gap-16">
+                <div className="md:col-span-1">
+                  <h2 className="font-headline sticky top-24 text-3xl font-semibold text-white">
+                    Our Approach
+                  </h2>
+                </div>
+                <div className="md:col-span-2">
+                  <div className="space-y-6 text-lg leading-relaxed text-white/90">
+                    <p>
+                      At FoodVrse, we identify broken links in the food system and build technology-driven ventures to fix them. From concept to pilot to scale, we create and grow our own brands, tackling real, systemic challenges in food production, distribution, and retail.
+                    </p>
+                    <p>
+                      Each brand, including Dishii, operates independently while sharing FoodVrse’s network, insights, and commitment to sustainability, community, and innovation.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </AnimatedContent>
           </div>
         </section>
 
