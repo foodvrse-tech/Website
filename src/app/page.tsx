@@ -18,13 +18,27 @@ export default function Home() {
         <HeroSection />
 
         <TwoColumnSection id="portfolio" title="Our Portfolio" className="bg-secondary">
-          <div className="space-y-6 text-lg text-warm-gray leading-relaxed">
-            <p>
-              Reshaping how food moves, sells, and sustains.
-            </p>
-            <p>
-              We build high-impact ventures that solve systemic problems at scale, anchored by Dishii in the retail sector, and expanding vertically into precision agriculture, smart distribution, and sustainable agri-processing.
-            </p>
+          <div className="space-y-10">
+            <div className="space-y-6 text-lg text-warm-gray leading-relaxed">
+              <p>
+                Reshaping how food moves, sells, and sustains.
+              </p>
+              <p>
+                We build high-impact ventures that solve systemic problems at scale, anchored by Dishii in the retail sector, and expanding vertically into precision agriculture, smart distribution, and sustainable agri-processing.
+              </p>
+            </div>
+            
+            <div className="space-y-4 pt-6">
+              <DishiiLogo />
+              <p className="text-lg leading-relaxed text-warm-gray">
+                A consumer marketplace connecting people to surplus meals from restaurants and supermarkets at discounted prices. Good for wallets. Good for the planet.
+              </p>
+              <Button asChild variant="link" className="mt-2 p-0 text-lg text-primary hover:text-accent">
+                <Link href="http://www.dishii.co/" target="_blank" rel="noopener noreferrer">
+                  Visit Dishii →
+                </Link>
+              </Button>
+            </div>
           </div>
         </TwoColumnSection>
 
@@ -58,26 +72,6 @@ export default function Home() {
                     Each brand operates independently while sharing our network, insights, and commitment to sustainability.
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-background">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="grid items-center gap-8 md:grid-cols-3 md:gap-16">
-              <div className="md:col-span-1">
-                <DishiiLogo />
-              </div>
-              <div className="md:col-span-2">
-                <p className="text-lg leading-relaxed text-warm-gray">
-                  A consumer marketplace connecting people to surplus meals from restaurants and supermarkets at discounted prices. Good for wallets. Good for the planet.
-                </p>
-                <Button asChild variant="link" className="mt-4 p-0 text-lg text-primary hover:text-accent">
-                  <Link href="http://www.dishii.co/" target="_blank" rel="noopener noreferrer">
-                    Visit Dishii →
-                  </Link>
-                </Button>
               </div>
             </div>
           </div>
