@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="flex justify-center md:col-span-3 md:justify-start">
             <div className="space-y-4">
               <Logo />
-              <p className="text-sm text-warm-gray">&copy; 2026 FoodVrse</p>
+              <p className="text-sm text-warm-gray">&copy; 2026 FoodVrse. All rights reserved.</p>
             </div>
           </div>
           <div className="md:col-span-2">
