@@ -12,7 +12,6 @@ const quickLinks = [
 
 const socialLinks = [
   { href: 'https://www.linkedin.com/company/foodvrse/', label: 'LinkedIn' },
-  { href: 'https://www.instagram.com/foodvrse/', label: 'Instagram' },
   { href: 'https://x.com/foodvrse', label: 'Twitter' },
 ];
 
