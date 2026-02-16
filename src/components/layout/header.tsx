@@ -12,7 +12,7 @@ const navLinks = [
   { href: '/about', label: 'About Us' },
   { href: '/#portfolio', label: 'Portfolio' },
   { href: '/#approach', label: 'Approach' },
-  { href: 'https://www.instagram.com/foodvrse/', label: 'Contact Us' },
+  { href: '/#contact', label: 'Contact Us' },
 ];
 
 export default function Header() {

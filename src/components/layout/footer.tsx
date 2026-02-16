@@ -15,7 +15,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-background py-12">
+    <footer id="contact" className="bg-background py-12">
       <div className="container mx-auto px-4 md:px-8">
         <Separator className="mb-12 bg-accent" />
         <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-4 md:text-left">
