@@ -11,6 +11,7 @@ import TrustedBySection from '@/components/sections/trusted-by-section';
 
 export default function Home() {
   const approachImage = PlaceHolderImages.find(img => img.id === 'approach-background');
+  const featuredImage = PlaceHolderImages.find(img => img.id === 'featured-in');
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -79,6 +80,29 @@ export default function Home() {
         </section>
 
         <TrustedBySection />
+
+        <section id="featured-in" className="py-16 md:py-24 bg-secondary">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-headline font-semibold text-primary">
+                As Featured In
+              </h2>
+            </div>
+            <div className="flex justify-center">
+              {featuredImage && (
+                <Image
+                  src={featuredImage.imageUrl}
+                  alt={featuredImage.description}
+                  data-ai-hint={featuredImage.imageHint}
+                  width={1200}
+                  height={300}
+                  className="rounded-lg shadow-lg object-contain"
+                />
+              )}
+            </div>
+          </div>
+        </section>
+
       </main>
       <Footer />
     </div>
