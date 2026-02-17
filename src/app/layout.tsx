@@ -1,13 +1,17 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
+ vercel/vercel-web-analytics-to-nextjs-nogrvw
 import { Analytics } from '@vercel/analytics/next';
+ main
 
 export const metadata: Metadata = {
   title: 'FoodVrse Ventures',
   description: 'Building the Future of Food across Africa.',
   icons: {
-    icon: 'https://i.postimg.cc/TY3PLwYV/LOGO-M.png',
+    icon: 'https://i.postimg.cc/YjT7TtF0/LOGO-M.png',
+    shortcut: 'https://i.postimg.cc/YjT7TtF0/LOGO-M.png',
+    apple: 'https://i.postimg.cc/YjT7TtF0/LOGO-M.png',
   },
 };
 
