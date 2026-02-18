@@ -36,7 +36,7 @@ export default function Home() {
                 A consumer marketplace connecting people to surplus meals from restaurants and supermarkets at discounted prices. Good for wallets. Good for the planet.
               </p>
               <Button asChild variant="link" className="mt-2 p-0 text-base md:text-lg text-primary hover:text-accent">
-                <Link href="http://www.dishii.co/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://dishii.co/" target="_blank" rel="noopener noreferrer">
                   Visit Dishii →
                 </Link>
               </Button>

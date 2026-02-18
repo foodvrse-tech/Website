@@ -4,12 +4,14 @@ import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: 'FoodVrse Ventures',
+  title: 'FoodVrse',
   description: 'Building the Future of Food across Africa.',
   icons: {
-    icon: 'https://i.postimg.cc/YjT7TtF0/LOGO-M.png',
-    shortcut: 'https://i.postimg.cc/YjT7TtF0/LOGO-M.png',
-    apple: 'https://i.postimg.cc/YjT7TtF0/LOGO-M.png',
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
